@@ -1,0 +1,20 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<!--
+    the fx:controller attribute tells the runtime which class is the controller for this window.
+    [packagename].[classname]
+
+    And since the GridPane has no child elements, the application windows will be empty
+-->
+<?import javafx.scene.text.Font?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label text="Welcome to Java!" textFill="darkgreen">
+        <font>
+            <Font name="Times New Roman bold" size="55"></Font>
+        </font>
+    </Label>
+</GridPane>

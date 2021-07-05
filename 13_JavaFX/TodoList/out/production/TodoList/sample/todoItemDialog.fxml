@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.DialogPane?>
+
+<!--
+    The Dialog Pane: as a layout manager that is used for dialogue allows us to set 4 properties:
+    header, graphic, content, and buttons. Each property expects a control because often going to
+    display text.
+
+    For header and content; it also has convenient properties header text, and content text. This
+    saves us from having to create a label property. If both are set then the non-text property
+    will take precedence.
+-->
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.DatePicker?>
+<!--<DialogPane fx:controller="sample.DialogController" xmlns:fx="http://javafx.com/fxml">-->
+<!--    <headerText>-->
+<!--        We could put instructions here.-->
+<!--    </headerText>-->
+
+<!--    <content>-->
+<!--        <GridPane vgap="10" hgap="10">-->
+<!--            <Label text="Short Description: " GridPane.rowIndex="0" GridPane.columnIndex="0" />-->
+<!--            <TextField fx:id="shortDescriptionField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
+<!--            <Label text="Details: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
+<!--            <TextArea fx:id="detailsArea" wrapText="true" GridPane.rowIndex="1" GridPane.columnIndex="1"/>-->
+<!--            <Label text="Deadline:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>-->
+<!--            <DatePicker fx:id="deadlinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>-->
+<!--        </GridPane>-->
+<!--    </content>-->
+<!--</DialogPane>-->
+
+<DialogPane fx:controller="sample.DialogController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        We could put instructions here
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Short Description:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="shortDescriptionField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Details:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea fx:id="detailsArea" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                      WrapText="true"/>
+            <Label text="Deadline:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="deadlinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

@@ -1,0 +1,31 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<!--
+    the fx:controller attribute tells the runtime which class is the controller for this window.
+    [packagename].[classname]
+
+    And since the GridPane has no child elements, the application windows will be empty
+-->
+<?import javafx.scene.text.Font?>
+
+<!--
+Layouts: in JavaFX layouts allows us to add UI components to a container without any code. There are 8 layouts;
+grid pane, anchor pane, stack pane, h/v box, flow pane, tile pane, border pane.
+
+Every control computes its preferred size based on its contents so the preferred size is the preferred width and
+height of the control when it's displayed.
+
+When a control is placed into a layout it becomes a child of that layout; some layouts will ensure their children
+display at the preferred widths or heights and sometimes it would depend on where the controllers are placed.
+-->
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label text="Welcome to Java!" textFill="darkgreen">
+        <font>
+            <Font name="Times New Roman bold" size="55"></Font>
+        </font>
+    </Label>
+</GridPane>
